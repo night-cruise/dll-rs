@@ -1,0 +1,18 @@
+[package]
+name = "dll"
+version = "0.1.0"
+edition = "2021"
+authors = ["Night Cruising"]
+license = "MIT"
+description = "Install the missing DLL file with one command!"
+readme = "README.md"
+repository = "https://github.com/night-cruise/dll-rs"
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+minreq = { version = "2.11.0", features = ["https", "proxy"] }
+regex = "1.10.2"
+zip = "0.6.6"
